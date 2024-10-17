@@ -1,0 +1,248 @@
+*,html{
+    padding: 0px;
+    margin: 0px
+}
+body{
+    background-color:#ecec88;
+}
+nav{
+    display: flex;
+    margin: 10px;
+    width: 98.5%;
+    height: 70px;
+    background-color: #8B4513;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 8px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+#brand{
+    margin-left: 80px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-size: larger;
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+    list-style: none ;
+    margin-right: 80px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+    font-family:"Poppins", sans-serif;
+    font-weight: 500;
+    transition:0.6s ease;
+}
+nav ul li a:hover{
+    color: #FFD700;
+    font-size: 20px;
+    transition:0.5s ease;
+}
+
+/* hero */
+
+.hero{
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cover{
+    border-radius:15px ;
+    width: 1000px;
+    height: 500px;
+    background-color:white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+.card{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 95%;
+    height: 95%;
+    background-color:white;
+    overflow-y: scroll;
+    gap: 6px;
+
+}
+.card::-webkit-scrollbar{
+    display: none;
+}
+.card img{
+    display: block;
+    border-radius: 15px;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.card img:hover{
+    width: 83%;
+    height: 83%;
+}
+/* konten */
+
+.konten{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #efc94e;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#judul{
+    color: white;
+    font-family:"Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 41px;
+}
+
+.gambar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    /* background-color: #f5f5f5; */
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px;
+    gap: 50px;
+}
+.gambar img{
+    border:2px solid #D3D3D3 ;
+    border-radius: 6px;
+    width: 300px;;
+    height: 200px;
+    object-fit: cover;
+    /* filter: blur(1px); */
+
+}
+
+/* konten2 */
+
+.konten2{
+    margin: 0;
+    padding: 0;
+    /* background-color:#b17d81; */
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#judul2{
+    color: rgb(255, 183, 0);
+    font-family:"Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 41px;
+}
+.gambar img:hover{
+    transform: scale(1.2);
+    filter:brightness(1.2);
+    transition: filter 1s ease;
+
+}
+/* artikel */
+
+article{
+    width: 100%;
+    height: auto;
+    padding-bottom:100px ;
+    background-color: #ffd884;
+}
+
+.artikel-container {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding-top: 5%;
+}
+
+.artikel-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; 
+    transition: transform 0.3s; 
+}
+
+.artikel-card:hover {
+    transform: scale(1.05);
+}
+
+.artikel-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.artikel-title a {
+    text-decoration: none;
+    color: #d95c6a; 
+}
+
+.artikel-description {
+    color: #666;
+    font-size: 14px;
+}   
+
+.nklm{
+    background-color: #e6d734;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cardk{
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #ffe592;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.cardk p{
+    color: rgb(185, 110, 18);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.cardk img{
+    border-radius: 10px;
+}
+.cardk div{
+    margin: 20px;
+    text-align: justify;
+}
