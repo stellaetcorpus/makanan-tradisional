@@ -308,7 +308,7 @@ article{
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 64%;
+        width: 78%;
     }
     .hero{
         margin-top: 100px;
@@ -321,8 +321,8 @@ article{
     .cover{
         margin-top: 3px;
         background-color: #ffe364;
-        width: 200px;
-        height: 100px;
+        width: 300px;
+        height: 300px;
     }
     .cover .card{
         border-radius:15px ;
