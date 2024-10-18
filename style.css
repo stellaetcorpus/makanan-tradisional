@@ -21,6 +21,7 @@ nav{
 }
 
 #brand{
+    font-family: "Playwrite GB S", cursive;
     margin-left: 80px;
     text-decoration: none;
     color: white;
@@ -42,6 +43,17 @@ nav ul li a{
     font-family:"Poppins", sans-serif;
     font-weight: 500;
     transition:0.6s ease;
+    animation: muncul 1s ease-in-out;
+}
+@keyframes muncul{
+    from{
+        opacity: 0;
+        transform: rotateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
 }
 nav ul li a:hover{
     color: #FFD700;
@@ -83,6 +95,7 @@ nav ul li a:hover{
     background-color:white;
     overflow-y: scroll;
     gap: 6px;
+    /* transition: all 10s ease-in-out; */
 
 }
 .card::-webkit-scrollbar{
@@ -94,6 +107,7 @@ nav ul li a:hover{
     width: 80%;
     height: 80%;
     object-fit: cover;
+    transition: all 0.3s ease-in-out;
 }
 .card img:hover{
     width: 83%;
@@ -130,6 +144,7 @@ nav ul li a:hover{
     grid-template-columns: repeat(4, 1fr);
     margin: 100px;
     gap: 50px;
+    transition: all 0.3s ease-in-out;
 }
 .gambar img{
     border:2px solid #D3D3D3 ;
@@ -158,9 +173,13 @@ nav ul li a:hover{
     font-weight: 600;
     font-size: 41px;
 }
+.gambar img{
+    transition:1s ease;
+}
 .gambar img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     filter:brightness(1.2);
+    transition: 1s ease;
     transition: filter 1s ease;
 
 }
@@ -233,16 +252,102 @@ article{
     align-items: center;
     align-content: center;
     justify-content: center;
+    transition: all 2s ease-in-out;
+
+}
+.cardk:hover{
+    transition: all 0.3
+    s ease-in-out;
+    animation: putar 2s infinite linear;
+    border-radius: 50px/50px;
+    border: 3px solid rgb(146, 146, 146);
 }
 .cardk p{
     color: rgb(185, 110, 18);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+
 }
 .cardk img{
-    border-radius: 10px;
+    border-radius: 50%;
+}
+
+.cardk img:hover{
+    animation: putar 1ms infinite linear;
+}
+
+@keyframes putar{
+    0%{
+        transform: rotate(0deg);
+    } 
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .cardk div{
     margin: 20px;
     text-align: justify;
+}
+
+/* ponsel */
+@media (max-width: 768px) {
+    #brand{
+        font-size:13px;
+        margin-left: 10px;
+        
+    }
+    .nav ul{
+        display: none;
+    }
+    .burger{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 64%;
+    }
+    .hero{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        /* background-color: #efbb00; */
+        justify-content: center;
+        width: 100%;
+    }
+    .cover{
+        margin-top: 3px;
+        background-color: #ffe364;
+        width: 200px;
+        height: 100px;
+    }
+    .cover .card{
+        border-radius:15px ;
+    }
+    .konten{
+        width: 100%;
+    }
+    .konten img{
+        width: 50%;
+        height:auto;
+    }
+    .konten2{
+        /* width: 100%; */
+        display: none;
+    }
+    .nklm{
+        width: 100%;
+        display: block;
+        background-color:#ecec88;
+    }
+    .cardk{
+        margin: auto;
+        border: 1px solid rgb(125, 125, 125);
+        margin-top: 20px;
+    }
+
+    
 }
